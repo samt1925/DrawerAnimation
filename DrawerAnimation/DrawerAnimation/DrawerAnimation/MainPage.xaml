@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:DrawerAnimation"
+             mc:Ignorable="d"
+             x:Class="DrawerAnimation.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView x:Name="skrull" HorizontalScrollBarVisibility="Always" BackgroundColor="Red" VerticalOptions="FillAndExpand">
+                <StackLayout Margin="22,22,18,0">
+                    <Frame HeightRequest="200"></Frame>
+                    <views:DrawerDetailFrame x:Name="Frame1" PropertyChanged="Frame1_PropertyChanged"></views:DrawerDetailFrame>
+                        <views:DrawerDetailFrame x:Name="Frame2">
+                            </views:DrawerDetailFrame>
+                </StackLayout>
+            </ScrollView>
+            <Frame BackgroundColor="White" CornerRadius="15" HasShadow="True" Padding="0,15,0,0" VerticalOptions="End" Margin="20,0,20,0">
+                <BoxView VerticalOptions="FillAndExpand" Color="White"></BoxView>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

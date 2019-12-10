@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DrawerAnimation.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BookingListBoxRec" TargetType="BoxView">
+                <Setter Property="Color" Value="#bd10e0" ></Setter>
+                <Setter Property="WidthRequest" Value="18" ></Setter>
+                <Setter Property="HeightRequest" Value="36" ></Setter>
+                <Setter Property="HorizontalOptions" Value="End" ></Setter>
+                <Setter Property="VerticalOptions" Value="Center" ></Setter>
+                <Setter Property="CornerRadius" Value="18,0,18,0" ></Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
